@@ -1,0 +1,12 @@
+#!/usr/bin/env awesome compile --config
+
+lists:
+- input: "readme.md"
+	format: "md:list"
+	outputs:
+	- file: "docs/src/index.html"
+		format: "md:table+meta>html"
+	- file: "/dev/stdout"
+		format: "test-alpha"
+
+# vim: set ts=2 sts=2 sw=2 noet:
